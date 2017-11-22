@@ -11,14 +11,12 @@ import UIKit
 class ViewController: UIViewController {
 
 	var number = 60
-	
 	var timer = Timer()
 	
 	@IBOutlet weak var counterLabel: UILabel!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
 		
 		counterLabel.text = String(number)
 		
@@ -26,7 +24,6 @@ class ViewController: UIViewController {
 
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
 	}
 
 	@objc func decreasebyOne() {
